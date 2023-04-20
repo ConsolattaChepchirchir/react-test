@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Article from './Article';
+import image from './yir3.jpg'
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello, welcome to my page!</h1>
+      <img src={image} className='image'/>
+      <p>In this project we will create a  a project to show our understanding on components,state and props</p>
+      <Article component ="Function"/>
     </div>
   );
 }
